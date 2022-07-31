@@ -9,6 +9,8 @@ import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 import { ReactiveFormsModule, FormControlDirective } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
+import { UserformComponent } from './userform/userform.component';
+import { CustomisedInputComponent } from './shared/customised-input/customised-input.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ParentComponent } from './parent/parent.component';
     MyComponentComponent,
     Child1Component,
     Child2Component,
-    ParentComponent
+    ParentComponent,
+    UserformComponent,
+    CustomisedInputComponent
   ],
   imports: [
     BrowserModule,

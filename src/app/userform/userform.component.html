@@ -1,0 +1,35 @@
+ <div class="m-auto mt-4 card" style="width: 45rem;">
+  <div class="card-body">
+    <div class="m-3 d-flex flex-row">
+      <app-customised-input (input)="setName($event)" [label]="'Name'" [type]="'text'"></app-customised-input>
+      <app-customised-input (input)="setFname($event)" [label]="'S/O'" [type]="'text'"></app-customised-input>
+      <div class="m-3">
+        <label>Gender</label>
+        <select [formControl]="gender" class="form-control">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+    </div>  
+    <div class="m-3 d-flex flex-row">
+      <div class="m-3 d-flex flex-column">
+        <label class="">D.O.B</label>
+        <input [type]="'date'" class="form-control" [id]="'date'" [formControl]="dob" [placeholder]="'Date of Birth'" >
+      </div>
+      <app-customised-input (input)="subject" [label]="'Favorite Subject'" [type]="'text'"></app-customised-input>
+      <app-customised-input [formm]="emailF" (input)="email" [label]="'Email'" [type]="'email'"></app-customised-input>
+    </div>
+    <div>
+      <button class="btn btn-primary" (click)="calculateAge()" [disabled]="emailF.invalid">Submit</button>
+    </div>
+  </div>
+</div>
+
+<div class="m-auto mt-4 card" style="width: 45rem;">
+  <div class="card-body">
+    <p>Name: {{name}}</p>
+    <p>Father Name: {{fName}}</p>
+    <p>Gender: {{gender}}</p>
+    <p>Age: {{birth}}</p>
+  </div>
+</div>
