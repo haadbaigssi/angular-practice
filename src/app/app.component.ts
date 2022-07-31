@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'my-app';
+  keyword="";
+  send(keyword:string):void{
+    this.keyword = keyword;
+  }
 }
