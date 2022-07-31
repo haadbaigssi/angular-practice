@@ -8,13 +8,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 import { ReactiveFormsModule, FormControlDirective } from '@angular/forms';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    ParentComponent
   ],
   imports: [
     BrowserModule,
